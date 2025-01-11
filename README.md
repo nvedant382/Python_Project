@@ -28,7 +28,7 @@ The project uses a MySQL database with the following tables:
 
 ### Sample SQL Schema
 
-````sql
+```sql
 CREATE TABLE Crimes (
     CrimeID INT PRIMARY KEY AUTO_INCREMENT,
     CrimeType VARCHAR(50),
@@ -60,6 +60,7 @@ CREATE TABLE Officers (
     OfficerName VARCHAR(100),
     Rank VARCHAR(50)
 );
+```
 
 # Installation Guide
 
@@ -71,28 +72,27 @@ MySQL
 ### Ensure that both Python and MySQL are installed on your machine before proceeding.
 
 1. Install Python Dependencies
-To install the required Python dependency, open a terminal and run the following command:
+   To install the required Python dependency, open a terminal and run the following command:
 
-pip install mysql-connector-python
-2. Configure MySQL Database
+pip install mysql-connector-python 2. Configure MySQL Database
 Create a MySQL database and configure the DB_CONFIG in the Python script with your MySQL credentials.
 
-
 DB_CONFIG = {
-    "host": "localhost",          # Host of your MySQL server
-    "user": "root",               # Replace with your MySQL username
-    "password": "root",           # Replace with your MySQL password
-    "database": "crime_management"  # Replace with the name of your database
+"host": "localhost", # Host of your MySQL server
+"user": "root", # Replace with your MySQL username
+"password": "root", # Replace with your MySQL password
+"database": "crime_management" # Replace with the name of your database
 }
 
 # Create Database and Tables
-Run the provided SQL schema in MySQL to create the necessary database and tables for the project.
 
+Run the provided SQL schema in MySQL to create the necessary database and tables for the project.
 
 Here is a basic README.md file for your project that includes an overview of the project, installation steps, and usage instructions:
 
 markdown
 Copy code
+
 # Crime Management System API
 
 This is a simple API for managing crime data, suspects, investigations, and officer details using Python and MySQL. The API allows performing CRUD operations on crime data and includes endpoints to retrieve crime and officer information. It also connects to a MySQL database for storing and retrieving data.
@@ -109,8 +109,8 @@ This is a simple API for managing crime data, suspects, investigations, and offi
 
 - Python 3.x
 - MySQL
-- `mysql-connector` Python library
-- `http.server` Python library for creating a basic HTTP server
+- mysql-connector Python library
+- http.server Python library for creating a basic HTTP server
 
 ## Database Schema
 
@@ -123,7 +123,7 @@ The project uses a MySQL database with the following tables:
 
 ### Sample SQL Schema
 
-```bash
+```sql
 CREATE TABLE Crimes (
     CrimeID INT PRIMARY KEY AUTO_INCREMENT,
     CrimeType VARCHAR(50),
@@ -231,4 +231,7 @@ curl -X DELETE http://localhost:8000/crimes/1
 # Contributing
 
 Feel free to fork this project and create a pull request. You can also open an issue if you encounter any bugs or have suggestions for improvement.
-````
+
+```
+
+```
