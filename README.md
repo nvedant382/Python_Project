@@ -155,7 +155,7 @@ CREATE TABLE Officers (
     OfficerName VARCHAR(100),
     Rank VARCHAR(50)
 );
-````
+```
 
 # Installation
 
