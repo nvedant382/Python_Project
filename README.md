@@ -74,8 +74,12 @@ MySQL
 1. Install Python Dependencies
    To install the required Python dependency, open a terminal and run the following command:
 
-pip install mysql-connector-python 2. Configure MySQL Database
-Create a MySQL database and configure the DB_CONFIG in the Python script with your MySQL credentials.
+```bash
+pip install mysql-connector-python
+```
+
+2. Configure MySQL Database
+   Create a MySQL database and configure the DB_CONFIG in the Python script with your MySQL credentials.
 
 DB_CONFIG = {
 "host": "localhost", # Host of your MySQL server
@@ -192,11 +196,11 @@ The server will start on port 8000. You can interact with the API by sending HTT
 
 ## Endpoints
 
-**_GET /crimes:_** Retrieve a list of all crimes.
-**_GET /officers:_** Retrieve a list of all officers.
-**_POST /crimes:_** Add a new crime.
-**_PUT /crimes/{id}:_** Update the status of a crime by ID.
-**_DELETE /crimes/{id}:_** Delete a crime by ID.
+**GET /crimes:** Retrieve a list of all crimes.
+**GET /officers:** Retrieve a list of all officers.
+**POST /crimes:** Add a new crime.
+**PUT /crimes/{id}:** Update the status of a crime by ID.
+**DELETE /crimes/{id}:** Delete a crime by ID.
 
 # Sample API Requests
 
@@ -231,7 +235,3 @@ curl -X DELETE http://localhost:8000/crimes/1
 # Contributing
 
 Feel free to fork this project and create a pull request. You can also open an issue if you encounter any bugs or have suggestions for improvement.
-
-```
-
-```
