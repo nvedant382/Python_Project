@@ -28,7 +28,7 @@ The project uses a MySQL database with the following tables:
 
 ### Sample SQL Schema
 
-```sql
+```bash
 CREATE TABLE Crimes (
     CrimeID INT PRIMARY KEY AUTO_INCREMENT,
     CrimeType VARCHAR(50),
@@ -123,7 +123,7 @@ The project uses a MySQL database with the following tables:
 
 ### Sample SQL Schema
 
-```sql
+```bash
 CREATE TABLE Crimes (
     CrimeID INT PRIMARY KEY AUTO_INCREMENT,
     CrimeType VARCHAR(50),
