@@ -123,7 +123,7 @@ The project uses a MySQL database with the following tables:
 
 ### Sample SQL Schema
 
-```sql
+```bash
 CREATE TABLE Crimes (
     CrimeID INT PRIMARY KEY AUTO_INCREMENT,
     CrimeType VARCHAR(50),
@@ -155,7 +155,7 @@ CREATE TABLE Officers (
     OfficerName VARCHAR(100),
     Rank VARCHAR(50)
 );
-````
+```
 
 # Installation
 
@@ -231,3 +231,4 @@ curl -X DELETE http://localhost:8000/crimes/1
 # Contributing
 
 Feel free to fork this project and create a pull request. You can also open an issue if you encounter any bugs or have suggestions for improvement.
+````
