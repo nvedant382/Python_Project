@@ -81,21 +81,14 @@ pip install mysql-connector-python
 2. Configure MySQL Database
    Create a MySQL database and configure the DB_CONFIG in the Python script with your MySQL credentials.
 
+```python
 DB_CONFIG = {
 "host": "localhost", # Host of your MySQL server
 "user": "root", # Replace with your MySQL username
 "password": "root", # Replace with your MySQL password
 "database": "crime_management" # Replace with the name of your database
 }
-
-# Create Database and Tables
-
-Run the provided SQL schema in MySQL to create the necessary database and tables for the project.
-
-Here is a basic README.md file for your project that includes an overview of the project, installation steps, and usage instructions:
-
-markdown
-Copy code
+```
 
 # Crime Management System API
 
